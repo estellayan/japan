@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;600;900&family=Inter:wght@300;400;500;700&display=swap');
+
+:root {
+    --klein-blue: #002FA7;
+    --natural-wood: #D7B49E;
+    --bg-sand: #F2EDE4;
+    --shadow-subtle: 0 4px 20px rgba(0,0,0,0.03);
+    --shadow-elegant: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Noto Serif SC', serif;
+}
+
+.wood-texture {
+    background-image: url('https://images.unsplash.com/photo-1588345921523-c2dcd57dd333?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+/* Scroll Reveal Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+.scroll-reveal.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Swiper Custom */
+.poster-swiper {
+    padding: 20px 0 60px 0;
+}
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--klein-blue);
+    width: 24px;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Poster Styling */
+.poster-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0) 80%);
+}
+
+.glass-btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Aesthetics - Japanese Modern */
+.shadow-soft {
+    box-shadow: var(--shadow-subtle);
+}
+
+.shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+}
+
+.jp-input {
+    border: 1px solid #eee;
+    background: #fdfdfd;
+    border-radius: 2px;
+}
+
+.jp-input:focus {
+    border-color: var(--klein-blue);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 47, 167, 0.05);
+}
+
+/* FAQ Interaction */
+.faq-item [data-lucide] {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.copy-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.copy-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -10px);
+}
+
+/* Responsive Micro-adjustments */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 2.25rem;
+    }
+    header p {
+        font-size: 0.875rem;
+        line-height: 1.7;
+    }
+    .poster-swiper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .jp-input {
+        padding: 1rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-sand);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--klein-blue);
+}

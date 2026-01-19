@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sincerity Global | 日本高端菲佣派遣专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F9F8F6] text-[#333] font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-4 md:px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="text-xl md:text-2xl font-serif font-bold tracking-tighter text-[#002FA7]">SINCERITY <span class="font-light text-gray-400">| 誠心</span></div>
+        <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#workstation" class="hover:text-[#002FA7] transition-colors">Social Kit</a>
+            <a href="#showroom" class="hover:text-[#002FA7] transition-colors">Showroom</a>
+            <a href="#contact" class="px-4 py-2 bg-[#002FA7] text-white rounded-sm hover:bg-blue-800 transition-all">预约咨询</a>
+        </div>
+        <a href="#contact" class="md:hidden text-xs bg-[#002FA7] text-white px-3 py-1.5 rounded-sm">预约</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex items-center justify-center relative overflow-hidden bg-[#F2EDE4]">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="wood-texture h-full w-full"></div>
+        </div>
+        <div class="relative z-10 text-center px-6" id="hero-content">
+            <h2 class="text-[#002FA7] text-xs md:text-base font-medium tracking-[0.3em] mb-4 uppercase">Professional Labor Dispatch in Japan</h2>
+            <h1 class="text-3xl md:text-7xl font-serif font-light mb-6 md:mb-8 leading-tight">
+                定义在日华人的<br/><span class="font-bold italic">高质感</span>居家生活
+            </h1>
+            <p class="text-gray-600 max-w-xl mx-auto mb-8 md:mb-10 text-sm md:text-lg leading-relaxed">
+                全日本稀缺合规菲佣派遣。我们解决签证痛点，提供双语环境，让专业家政管理融入现代日式生活空间。
+            </p>
+            <a href="#showroom" class="inline-block border-b-2 border-[#002FA7] pb-1 text-[#002FA7] font-medium hover:opacity-70 transition-opacity text-sm md:text-base">探索品牌核心优势</a>
+        </div>
+    </header>
+
+    <!-- 1. Social Media Kit Section -->
+    <section id="workstation" class="py-20 md:py-32 bg-white scroll-reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-4">
+                <div>
+                    <span class="text-[#002FA7] font-bold text-xs tracking-widest uppercase">01 / Social Media Kit</span>
+                    <h2 class="text-2xl md:text-4xl font-serif mt-2">小红书海报工作站</h2>
+                </div>
+                <p class="text-gray-400 text-xs md:text-sm max-w-xs leading-relaxed">适配移动端手势切换。动态排版预览，一键复制文案。助力品牌在日本华人圈快速传播。</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper poster-swiper pb-12">
+                <div class="swiper-wrapper" id="poster-container">
+                    <!-- Posters will be injected here as .swiper-slide -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Brand Showroom Section -->
+    <section id="showroom" class="py-20 md:py-32 bg-[#F2EDE4]">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="text-[#002FA7] font-bold text-xs tracking-widest uppercase scroll-reveal">02 / Brand Showroom</span>
+            <h2 class="text-2xl md:text-4xl font-serif mt-2 mb-12 md:mb-16 scroll-reveal">品牌官方展示区</h2>
+
+            <!-- Core Strengths -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-24 md:mb-32">
+                <div class="bg-white p-8 md:p-10 border-t-4 border-[#002FA7] shadow-soft advantage-card scroll-reveal">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-[#002FA7] mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">法律合规 签证担保</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">拥有自有劳务派遣资质，直接签发合规签证。解决在日菲佣最大的身份痛点，让雇主无后顾之忧。</p>
+                </div>
+                <div class="bg-white p-8 md:p-10 border-t-4 border-[#D7B49E] shadow-soft advantage-card scroll-reveal">
+                    <i data-lucide="languages" class="w-10 h-10 text-[#D7B49E] mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">双语环境 国际视野</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">菲佣以英语为母语。为孩子营造自然的沉浸式外语环境，平衡日语、中文与英语的成长氛围。</p>
+                </div>
+                <div class="bg-white p-8 md:p-10 border-t-4 border-[#002FA7] shadow-soft advantage-card scroll-reveal">
+                    <i data-lucide="user-cog" class="w-10 h-10 text-[#002FA7] mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">机构化 拒尽私单</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">拒绝个人中介乱象。固定月薪制度，机构化统一培训管理，杜绝随意涨价或违约跳槽。</p>
+                </div>
+            </div>
+
+            <!-- Flowchart -->
+            <div class="mb-24 md:mb-32">
+                <h3 class="text-center text-xl md:text-2xl font-serif mb-12 md:mb-16 scroll-reveal">极致透明的服务流程</h3>
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8 relative">
+                    <div class="hidden md:block absolute top-10 left-0 w-full h-[1px] bg-gray-200 z-0"></div>
+                    <div class="relative z-10 flex flex-col items-center text-center w-full process-step scroll-reveal">
+                        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center border border-gray-100 shadow-sm mb-6">
+                            <span class="text-[#002FA7] font-bold">01</span>
+                        </div>
+                        <h4 class="font-bold mb-2 text-sm md:text-base">在线咨询</h4>
+                        <p class="text-[10px] md:text-xs text-gray-500">匹配您的家庭需求<br/>提出任职要求</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center w-full process-step scroll-reveal" style="transition-delay: 100ms;">
+                        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center border border-gray-100 shadow-sm mb-6">
+                            <span class="text-[#002FA7] font-bold">02</span>
+                        </div>
+                        <h4 class="font-bold mb-2 text-sm md:text-base">简历筛选</h4>
+                        <p class="text-[10px] md:text-xs text-gray-500">对接菲律宾学校<br/>定向选拔合格人选</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center w-full process-step scroll-reveal" style="transition-delay: 200ms;">
+                        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center border border-gray-100 shadow-sm mb-6">
+                            <span class="text-[#002FA7] font-bold">03</span>
+                        </div>
+                        <h4 class="font-bold mb-2 text-sm md:text-base">签证办理</h4>
+                        <p class="text-[10px] md:text-xs text-gray-500">公司全程担保<br/>快速获批入日签证</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center w-full process-step scroll-reveal" style="transition-delay: 300ms;">
+                        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center border border-gray-100 shadow-sm mb-6">
+                            <span class="text-[#002FA7] font-bold">04</span>
+                        </div>
+                        <h4 class="font-bold mb-2 text-sm md:text-base">履职配套</h4>
+                        <p class="text-[10px] md:text-xs text-gray-500">专人地接落地<br/>持续管理与反馈</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="max-w-3xl mx-auto scroll-reveal">
+                <h3 class="text-xl md:text-2xl font-serif mb-10 text-center">费用透明化答疑</h3>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white p-5 md:p-6 rounded-sm shadow-soft">
+                        <div class="flex justify-between items-center cursor-pointer">
+                            <h4 class="font-bold text-sm md:text-base">每月的总投入大概是多少？</h4>
+                            <i data-lucide="plus" class="w-4 h-4 text-[#002FA7]"></i>
+                        </div>
+                        <div class="faq-content hidden pt-4 text-xs md:text-sm text-gray-500 leading-relaxed">
+                            包含雇员工资、社保及管理费，雇主每月支出约为33,000人民币左右。相比随意跳槽、且无签证保障的私单市场，机构化派遣提供更高的性价比与安全性。
+                        </div>
+                    </div>
+                    <div class="faq-item bg-white p-5 md:p-6 rounded-sm shadow-soft">
+                        <div class="flex justify-between items-center cursor-pointer">
+                            <h4 class="font-bold text-sm md:text-base">关于前期的一次性费用？</h4>
+                            <i data-lucide="plus" class="w-4 h-4 text-[#002FA7]"></i>
+                        </div>
+                        <div class="faq-content hidden pt-4 text-xs md:text-sm text-gray-500 leading-relaxed">
+                            包含菲律宾专业学校培训费与签证办理服务费，约为1.5万-2万人民币。这是一次性费用，用于确保人才的高素质选拔。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section id="contact" class="py-24 md:py-32 bg-[#F9F8F6]">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12 scroll-reveal">
+                <h2 class="text-2xl md:text-4xl font-serif mb-4">开启高端居家新体验</h2>
+                <p class="text-gray-500 text-sm md:text-base">留下您的联系方式，我们的日本专属顾问将在24小时内联系您。</p>
+            </div>
+            
+            <form id="booking-form" class="bg-white p-8 md:p-12 shadow-elegant rounded-sm space-y-6 scroll-reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[10px] md:text-xs uppercase tracking-widest text-[#999] font-bold">您的姓名 / Name</label>
+                        <input type="text" name="name" required placeholder="如何称呼您" class="jp-input text-sm p-4 outline-none transition-all">
+                        <span class="error-msg text-[10px] text-red-500 hidden">请填写您的姓名</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[10px] md:text-xs uppercase tracking-widest text-[#999] font-bold">联系方式 / Contact</label>
+                        <input type="text" name="contact" required placeholder="手机号、WeChat或LINE" class="jp-input text-sm p-4 outline-none transition-all">
+                        <span class="error-msg text-[10px] text-red-500 hidden">请留下有效的联系方式</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[10px] md:text-xs uppercase tracking-widest text-[#999] font-bold">需求描述 / Requirements</label>
+                    <textarea name="details" rows="4" placeholder="例如：希望有双语背景，擅长儿童陪伴..." class="jp-input text-sm p-4 outline-none transition-all"></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="w-full bg-[#002FA7] text-white font-bold py-5 rounded-sm hover:bg-black transition-all flex items-center justify-center gap-3">
+                    <span class="tracking-widest">提交咨询申请</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white max-w-sm w-full p-10 text-center rounded-sm shadow-2xl scale-95 transition-transform duration-300">
+            <div class="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold mb-2">预约成功</h3>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed">感谢您的信任。我们的专属顾问将尽快与您取得联系。</p>
+            <button onclick="closeModal()" class="w-full border border-gray-200 py-3 text-sm font-medium hover:bg-gray-50 transition-colors">好的</button>
+        </div>
+    </div>
+
+    <footer class="py-12 bg-[#1a1a1a] text-gray-500 text-center text-[10px] tracking-widest px-4">
+        &copy; 2026 SINCERITY GLOBAL LABOUR DISPATCH JP. <br class="md:hidden"> ALL RIGHTS RESERVED.
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
